@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Estate-Agent-Client-side-Web-Application-/',   S
+  base: '/Estate-Agent-Client-side-Web-Application-/',
 })
