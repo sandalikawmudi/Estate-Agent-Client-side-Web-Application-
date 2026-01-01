@@ -1,0 +1,209 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+ font-size:16px;       
+}
+
+body{
+ background:#eef1f7;
+ color:#1f2a44;
+ line-height:1.45;
+}
+
+/* HEADINGS CONSISTENT */
+h1{
+ font-size:2.2rem;
+ font-weight:900;
+}
+
+h2{
+ font-size:1.3rem;
+ font-weight:800;
+}
+
+p,
+span,
+label,
+input,
+select,
+button{
+ font-size:0.95rem;
+}
+
+/* PAGE CONTAINER */
+.page-container{
+ width:100vw;
+ min-height:100vh;
+ padding:35px 0;
+ display:flex;
+ justify-content:center;
+}
+
+.page-inner{
+ width:92%;
+ max-width:1350px;
+}
+
+/* PAGE HEADING */
+.main-title{
+ text-align:center;
+ font-size:2.2rem;
+ font-weight:900;
+ margin-bottom:25px;
+}
+
+/* TOP ROW LAYOUT */
+.top-layout{
+ display:grid;
+ grid-template-columns:2fr 1fr;
+ gap:25px;
+}
+
+/* SEARCH CARD */
+.search-card{
+ background:white;
+ border:2px solid #dde4f4;
+ border-radius:8px;
+ padding:18px;
+ box-shadow:0 6px 12px rgba(0,0,0,.08);
+}
+
+.search-card h2{
+ margin-bottom:8px;
+}
+
+/* Form Box */
+form{
+ border:2px solid #dde4f4;
+ border-radius:6px;
+ padding:16px;
+}
+
+.form-row-1{
+ display:grid;
+ grid-template-columns:1fr;
+ gap:10px;
+}
+
+.form-row-2{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:12px;
+ margin-top:10px;
+}
+
+.form-row-full{
+ margin-top:12px;
+}
+
+label{
+ font-weight:700;
+ margin-bottom:4px;
+ display:block;
+}
+
+input,
+select{
+ width:100%;
+ padding:9px;
+ border:2px solid #b8c4e3;
+ border-radius:6px;
+ font-size:0.95rem;
+ background:white;
+ color:#1f2a44;
+}
+
+/* Button */
+button{
+ margin-top:14px;
+ width:180px;
+ height:40px;
+ border-radius:6px;
+ background:linear-gradient(to right,#2f7ae5,#1f5fcc);
+ border:none;
+ color:white;
+ font-size:0.95rem;
+ font-weight:800;
+ cursor:pointer;
+}
+
+/* FAVOURITES PANEL */
+.favourites-box{
+ background:white;
+ border:2px solid #dde4f4;
+ border-radius:8px;
+ padding:18px;
+ min-height:380px;
+ box-shadow:0 6px 12px rgba(0,0,0,.08);
+ font-size:0.95rem;
+}
+
+/* SEARCH RESULTS SECTION */
+.results-section{
+ margin-top:25px;
+ width:100%;
+}
+
+.results-container{
+ width:100%;
+ background:white;
+ border:2px solid #dde4f4;
+ border-radius:8px;
+ padding:18px;
+ box-shadow:0 6px 12px rgba(0,0,0,.08);
+ font-size:0.95rem;
+}
+
+/* PROPERTY CARD */
+.property-card{
+ display:grid;
+ grid-template-columns:180px 1fr auto;   
+ gap:12px;
+ background:white;
+ border:2px solid #dde4f4;
+ border-radius:8px;
+ padding:12px;
+ margin-bottom:12px;
+ font-size:0.95rem;
+}
+
+.property-image{
+ width:180px;
+ height:120px;
+ border-radius:6px;
+ object-fit:cover;
+}
+
+/* makes Type & Price appear cleanly */
+.property-card h3{
+ margin:0 0 6px 0;   
+ font-weight:800;
+}
+
+/* VIEW BUTTON SECTION */
+.result-view-btn{
+ display:flex;
+ align-items:center;
+ justify-content:flex-end;
+}
+
+/* VIEW BUTTON STYLE */
+.view-btn{
+ padding:10px 24px;
+ border-radius:6px;
+ background:#2f7ae5;
+ color:white;
+ border:none;
+ font-weight:800;
+ cursor:pointer;
+ transition:0.2s;
+}
+
+.view-btn:hover{
+ background:#1f5fcc;
+}
