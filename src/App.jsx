@@ -1,10 +1,7 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import SearchPage from "./pages/SearchPage";
-
-// Import ALL 7 property pages
 import PropertyPage1 from "./pages/PropertyPage1";
 import PropertyPage2 from "./pages/PropertyPage2";
 import PropertyPage3 from "./pages/PropertyPage3";
@@ -15,7 +12,6 @@ import PropertyPage7 from "./pages/PropertyPage7";
 
 import FavouritesProvider from "./context/FavouritesContext";
 import Navbar from "./components/Navbar";
-import "./App.css";
 
 function App() {
   return (
@@ -27,10 +23,8 @@ function App() {
         <div className="page-container">
           <Routes>
 
-            {/* HOME / SEARCH PAGE */}
             <Route path="/" element={<SearchPage />} />
 
-            {/* EXACT PROPERTY ROUTES */}
             <Route path="/property/prop1" element={<PropertyPage1 />} />
             <Route path="/property/prop2" element={<PropertyPage2 />} />
             <Route path="/property/prop3" element={<PropertyPage3 />} />
@@ -48,4 +42,3 @@ function App() {
 }
 
 export default App;
-
