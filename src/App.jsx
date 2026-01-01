@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+
 
 import SearchPage from "./pages/SearchPage";
 
@@ -18,7 +19,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <FavouritesProvider>
 
         <Navbar />
@@ -42,7 +43,7 @@ function App() {
         </div>
 
       </FavouritesProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
