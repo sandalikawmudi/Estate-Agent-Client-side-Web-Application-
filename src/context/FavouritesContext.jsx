@@ -25,3 +25,4 @@ function FavouritesProvider({ children }) {
 }
 
 export default FavouritesProvider;
+
